@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Brilliant Sisters - Pompei</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>The Brilliant Sisters - Pompei</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Benvenuti al The Brilliant Sisters</h2>
+                <p>Il nostro B&B offre un'atmosfera accogliente e confortevole nel cuore di Pompei, perfetto per il tuo soggiorno durante la visita agli scavi archeologici o per una fuga rilassante nella nostra storica città.</p>
+                <button type = "button" class = "head-btn">PRENOTA ORA</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#services">Servizi</a></li>
+                <li><a href = "#rooms">Camere</a></li>
+                <li><a href = "#customers">Clienti</a></li>
+            </ul>
+            <button class = "btn sign-up">Registrati</button>
+            <button class = "btn log-in">Accedi</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>Servizi</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Bar a pochi passi</h2>
+                        <p>Non offriamo il servizio di colazione direttamente, ma a pochi passi dal B&B è disponibile un ottimo bar dove potrai gustare un'abbondante colazione e caffè locali.</p>
+                        <button type = "button" class = "btn">Scopri di più</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Relax</h2>
+                        <p>Rilassati nella nostra struttura, pensata per garantire il massimo comfort e tranquillità dopo una giornata di esplorazione a Pompei e dintorni.</p>
+                        <button type = "button" class = "btn">Scopri di più</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Servizio di pulizia</h2>
+                        <p>Le pulizie vengono effettuate all'inizio e alla fine del soggiorno per garantire il massimo comfort e igiene durante la tua permanenza.</p>
+                        <button type = "button" class = "btn">Scopri di più</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Sicurezza della Camera</h2>
+                        <p>Ogni camera è dotata di chiavi elettroniche e sistemi di sicurezza per garantirti una permanenza sicura e senza preoccupazioni.</p>
+                        <button type = "button" class = "btn">Scopri di più</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Data di Check-in: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Data di Check-out: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adulti: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Bambini: </label>
+                    <input type = "number" min = "0" value = "0" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Camere: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Prenota ora">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>Camere</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "camera immagine">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Camere Deluxe</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Aria condizionata
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Wi-Fi gratuito
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bagno privato
+                            </li>
+                        </ul>
+                        <p>Le nostre camere deluxe offrono tutti i comfort necessari per un soggiorno rilassante. Perfette per coppie o viaggiatori solitari.</p>
+                        <p class = "rate">
+                            <span>€99,00 /</span> a notte
+                        </p>
+                        <button type = "button" class = "btn">Prenota ora</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "camera immagine">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Camere Deluxe</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Aria condizionata
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Wi-Fi gratuito
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bagno privato
+                            </li>
+                        </ul>
+                        <p>Le nostre camere deluxe offrono un ambiente tranquillo, ideale per riposarsi dopo una lunga giornata di visite turistiche a Pompei.</p>
+                        <p class = "rate">
+                            <span>€99,00 /</span> a notte
+                        </p>
+                        <button type = "button" class = "btn">Prenota ora</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+        <!-- end of rooms section -->
+
+        <!-- customers section -->
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>Recensioni dei Clienti</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Ottimo soggiorno!</h3>
+                        <p>La struttura è molto pulita e accogliente. La posizione è perfetta per visitare gli scavi di Pompei, e il personale è stato molto disponibile. Consigliato!</p>
+                        <img src = "images/cust1.jpg" alt = "cliente 1">
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Esperienza fantastica</h3>
+                        <p>Il soggiorno al The Brilliant Sisters è stato fantastico. La camera era confortevole e silenziosa. A due passi da tutto ciò che si può desiderare a Pompei. Tornerò sicuramente!</p>
+                        <img src = "images/cust2.jpg" alt = "cliente 2">
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Perfetto per una fuga romantica</h3>
+                        <p>Io e il mio partner ci siamo trovati benissimo. La camera era pulita e ben attrezzata, e la posizione centrale ci ha permesso di esplorare Pompei senza problemi. Ottima scelta!</p>
+                        <img src = "images/cust3.jpg" alt = "cliente 3">
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of customers section -->
+
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>The Brilliant Sisters - Pompei</h2>
+                    <p>Situato nel cuore di Pompei, il nostro B&B offre un'ospitalità calorosa e un soggiorno confortevole, a pochi passi dagli scavi archeologici e dalle attrazioni principali.</p>
+                </div>
+                <div>
+                    <h2>Contatti</h2>
+                    <ul class = "contact-info">
+                        <li>
+                            <span><i class = "fas fa-map-marker-alt"></i></span>
+                            <span>Via Messigno Prima Traversa n.9, Pompei (NA)</span>
+                        </li>
+                        <li>
+                            <span><i class = "fas fa-envelope"></i></span>
+                            <span>info@thebrilliantsisters.com</span>
+                        </li>
+                        <li>
+                            <span><i class = "fas fa-phone"></i></span>
+                            <span>+39 081 123 4567</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Social</h2>
+                    <ul class = "social-icons">
+                        <li>
+                            <span><i class = "fab fa-facebook"></i></span>
+                            <span>Facebook</span>
+                        </li>
+                        <li>
+                            <span><i class = "fab fa-instagram"></i></span>
+                            <span>Instagram</span>
+                        </li>
+                        <li>
+                            <span><i class = "fab fa-twitter"></i></span>
+                            <span>Twitter</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <script src = "main.js"></script>
+    </body>
+</html>
