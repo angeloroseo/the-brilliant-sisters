@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.rcounter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/restaurant.css">
+  <script type="text/javascript" src="js/restaurant.js"></script>
+</head>
+<body>
+
+<!-- fake carousel -->
+<div id="backdrop">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#" id="bi"><h2>Bakery Items</h2></a>
+      </div>
+      <div class="col">
+        <a href="#" id="sad"><h2>Sweets & Desserts</h2></a>
+      </div>
+      <div class="col">
+        <a href="#" id="b"><h2>Beverages</h2></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<!-- menu -->
+<div class="container" id="meals">
+  <div class="row">
+    <div class="col">
+      <h1>Meals</h1>
+      <hr>
+      <br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <a href="#"><i class="fas fa-utensils"></i>
+      <br><br><p id="breakfast">Breakfast</p></a>
+    </div>
+    <div class="col">
+      <a href="#"><i class="fas fa-utensils"></i>
+      <br><br><p id="lunch">Lunch</p></a>
+    </div>
+    <div class="col">
+      <a href="#"><i class="fas fa-utensils"></i>
+      <br><br><p id="dinner">Dinner</p></a>
+    </div>
+  </div>
+  <br><br>
+  <div class="row" id="menu">
+    <div class="col">
+      <table class="table table-dark table-striped table-hover">
+        <tr>
+          <th>Dish</th>
+          <th>Price</th>
+          <th>Order</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col">
+     <table class="table table-dark table-striped table-hover">
+        <tr>
+          <th>Dish</th>
+          <th>Price</th>
+          <th>Order</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col">
+      <table class="table table-dark table-striped table-hover">
+        <tr>
+          <th>Dish</th>
+          <th>Price</th>
+          <th>Order</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-danger remove">-</button>
+              </div>
+              <input type="number" class="form-control" value="0">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-success add">+</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+      <a href="#order"><button class="placeOrder">Place Order</button></a>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<!-- Deal of the day -->
+<div id="dealOfTheDay">
+  <h1>Deal Of The Day</h1>
+  <br>
+  <h3>Salad</h3>
+  <p>It's important to eat a variety of fresh fruits and vegetables, in as many different colors as possible. Combining them in a salad is both easy and delicious! Loaded with vitamins and minerals, eating a salad a day will also increase the level of powerful antioxidants in your blood.</p>
+  <br><br>
+  <a href="#menu"><button type="button">Order Now</button></a>
+</div>
+<br><br>
+
+<!-- popular dishes (real carousel)-->
+<div class="container" id="carouselContainer">
+  <div class="row">
+    <div class="col">
+      <h1>Popular Dishes<h1>
+      <hr>
+      <br>
+    </div>
+  </div>
+  <div id = "foodCarousel" class="carousel slide" data-ride="">
+    <ol class="carousel-indicators">
+      <li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#foodCarousel" data-slide-to="1"></li>
+      <li data-target="#foodCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/restaurant4.jpg">
+        <div class="carousel-caption">
+          <h1>Pizza</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/restaurant5.jpg">
+        <div class="carousel-caption">
+          <h1>Tacos</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/restaurant6.jpg">
+        <div class="carousel-caption">
+          <h1>Chicken Wings</h1>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#foodCarousel" data-slide="prev">
+      <p class="carousel-control-prev-icon"></p>
+    </a>
+    <a class="carousel-control-next" href="#foodCarousel" data-slide="next">
+      <p class="carousel-control-next-icon"></p>
+    </a>
+  </div>
+</div>
+<br><br><br><br><br>
+
+<!-- counter -->
+<div id="customer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <i class="fas fa-smile"></i>
+      </div>
+      <div class="col">
+        <i class="fas fa-concierge-bell"></i>
+      </div>
+      <div class="col">
+        <i class="fas fa-glass-martini-alt"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span class="counter" id="counter1">3286</span>
+      </div>
+      <div class="col">
+        <span class="counter" id="counter2">1542</span>
+      </div>
+      <div class="col">
+        <span class="counter" id="counter3">2112</span>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<!-- FoodGram -->
+<div id="foodgram" class="container">
+  <h1>FoodGram</h1>
+  <hr>
+  <br><br>
+  <div class="row">
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant9.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview9"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant10.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview10"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant11.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview11"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant12.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview12"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant13.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview13"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" >
+      <div id="zoomIn">
+        <img src="img/restaurant14.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview14"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant15.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview15"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="zoomIn">
+        <img src="img/restaurant16.jpg" alt="">
+        <div class="overlay">
+          <button type="button" data-toggle="modal" data-target="#myModal" class="preview16"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<!-- ordering form -->
+<div class="orderForm" id="order">
+<div class="container">
+  <form action="checkout.html" id="form" onsubmit="return function()">
+    <div class="row">
+      <div class="col">
+        <h1>Order Now</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="name" placeholder="Name" maxlength="15">
+        <small></small>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" id="contact" placeholder="Contact" maxlength="10">
+        <small></small>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="address" placeholder="Address" maxlength="40">
+        <small></small>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col">
+        <textarea rows="6" class="form-control" id="details" placeholder="Additional Order Details"></textarea>
+        <small></small>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        <button type="submit" id="order" class="form-control">Place Order</button>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+<!-- modal to display image -->
+<div class="modal fade" id="myModal">
+  <button class="close" data-dismiss="modal">&times;</button>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" class="modal-image">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

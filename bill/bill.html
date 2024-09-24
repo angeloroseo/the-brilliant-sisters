@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bill Status</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="src/bill.css">
+  <link rel="stylesheet" href="../css/nav.css">
+
+</head>
+<body>
+    <div class="moving-image"></div>
+    <input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
+    <label for="dark-light"></label>
+
+    <div class="light-back"></div> 
+
+  <div class="section-fluid-main">
+      <div class="section-row">
+          <div class="section-col-2">
+              <div class="section">
+                  <p class="color-blue">Your current Bill</p>
+                  <h3><span class="font-weight-500">Rs </span> 5,243.00 </h3>
+              </div>
+          </div>
+          <div class="section-col-2">
+              <div class="section">
+                  <p class="color-yellow">Account Balance</p>
+                  <h3><span class="font-weight-500">Rs </span> 2,000.00</h3>
+              </div>
+          </div>
+          <input class="date-btn" type="radio" id="date-1" name="date-btn" checked/>
+  			<label for="date-1"><span>Room</span></label> 
+  			<input class="date-btn" type="radio" id="date-2" name="date-btn"/>
+  			<label for="date-2"><span>Restaurant</span></label> 
+  			<input class="date-btn" type="radio" id="date-3" name="date-btn"/>
+  			<label for="date-3"><span>Theatre</span></label> 
+  			<input class="date-btn" type="radio" id="date-4" name="date-btn"/>
+              <label for="date-4"><span>Car Parking</span></label>
+              <div class="section-col-1">
+				<div class="section">
+					<div class="section-progress">
+						<div class="income days-30">
+							<div class="income-tooltip">
+								<p>Bill</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+						<div class="expense days-30">
+							<div class="expense-tooltip">
+								<p>Discount</p>
+								<h6>Rs ----</h6>
+							</div>
+						</div>
+						<div class="income days-90">
+							<div class="income-tooltip">
+								<p>Bill</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+						<div class="expense days-90">
+							<div class="expense-tooltip">
+								<p>Discount</p>
+								<h6>Rs ----</h6>
+							</div>
+						</div>
+						<div class="income days-180">
+							<div class="income-tooltip">
+								<p>Bill</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+						<div class="expense days-180">
+							<div class="expense-tooltip">
+								<p>Discount</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+						<div class="income days-365">
+							<div class="income-tooltip">
+								<p>Bill</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+						<div class="expense days-365">
+							<div class="expense-tooltip">
+								<p>Discount</p>
+								<h6>Rs ---</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="cd-header">
+			<div class="header-wrapper">
+				
+				<div class="nav-but-wrap">
+					<div class="menu-icon hover-target">
+						<span class="menu-icon__line menu-icon__line-left"></span>
+						<span class="menu-icon__line"></span>
+						<span class="menu-icon__line menu-icon__line-right"></span>
+					</div>					
+				</div>					
+			</div>				
+		</header>
+		<div class="nav">
+			<div class="nav__content">
+				<ul class="nav__list">
+					<li class="nav__list-item active-nav"><a href="../index.html" class="hover-target">Home</a></li>
+					<li class="nav__list-item"><a href="../restaurant.html" class="hover-target">Restaurant</a></li>
+					<li class="nav__list-item"><a href="../main.html" class="hover-target">Website</a></li>
+					<li class="nav__list-item"><a href="../Theatre/tick.html" class="hover-target">Theatre</a></li>
+					<li class="nav__list-item"><a href="../checkout.html" class="hover-target">Checkout</a></li>
+				</ul>
+			</div>
+		</div>		
+
+	<!--  -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script  src="src/bill.js"></script>
+	<script  src="../js/nav.js"></script>
+    </body>
+    </html>

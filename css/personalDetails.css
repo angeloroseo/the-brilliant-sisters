@@ -1,0 +1,162 @@
+/*background image*/
+body {
+  background: url("../img/room.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*form styling*/
+
+/*form outline*/
+.container {
+  margin: auto;
+  min-width: 60vw;
+  width: fit-content;
+  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*header styling*/
+h2 {
+  text-align: center;
+  color: orangered;
+  font-family: sans-serif;
+}
+
+/*label styling*/
+label {
+  font-weight: bold;
+  font-size: 18px;
+  color: orange;
+}
+
+/*input field length*/
+.form-control {
+  width: 100%;
+}
+
+/*removing default bootstrap input styling*/
+.form-control:focus {
+  box-shadow: none;
+}
+
+.col {
+  text-align: left;
+}
+
+/* Button Styling*/
+button {
+  width: fit-content;
+}
+
+.row:nth-last-child(1) .col {
+  text-align: center;
+}
+
+/*animation to the button on hovering */
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#back:hover span {
+  padding-left: 25px;
+}
+
+#proceed:hover span {
+  padding-right: 25px;
+}
+
+#back span:before {
+  content: "\00ab";
+  opacity: 0;
+  top: 0;
+  position: absolute;
+}
+
+#proceed span:after {
+  content: "\00bb";
+  opacity: 0;
+  top: 0;
+  position: absolute;
+}
+
+#back:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+#proceed:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*removing default bootstrap button styling */
+.btn-warning:focus,
+.btn-warning:active {
+  box-shadow: none;
+}
+
+.btn-success:focus,
+.btn-success:active {
+  box-shadow: none;
+}
+
+/* validation styling */
+.fa.fa-check-circle {
+  font-size: 20px;
+  color: green;
+  visibility: hidden;
+}
+
+.fa.fa-times-circle {
+  font-size: 20px;
+  color: red;
+  visibility: hidden;
+}
+
+.col i {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.col small {
+  color: red;
+  position: absolute;
+  left: 15px;
+  visibility: hidden;
+}
+
+.col.success input {
+  transition-delay: 0.1s;
+  border: 2px green solid;
+}
+
+.col.error input {
+  transition-delay: 0.1s;
+  border: 2px red solid;
+}
+
+.col.success .fa.fa-check-circle {
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+
+.col.error .fa.fa-times-circle {
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+
+.col.error small {
+  transition-delay: 0.1s;
+  visibility: visible;
+}
